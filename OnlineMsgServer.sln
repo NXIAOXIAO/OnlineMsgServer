@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMsgServer", "OnlineMsgServer.csproj", "{25CCECC8-9D18-41C9-80CC-D4BF5DA23636}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25CCECC8-9D18-41C9-80CC-D4BF5DA23636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CCECC8-9D18-41C9-80CC-D4BF5DA23636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CCECC8-9D18-41C9-80CC-D4BF5DA23636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CCECC8-9D18-41C9-80CC-D4BF5DA23636}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6199C6A0-5CFC-4112-A9E7-E2B73FE4E358}
+	EndGlobalSection
+EndGlobal
