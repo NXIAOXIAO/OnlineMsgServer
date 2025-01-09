@@ -9,11 +9,11 @@ namespace OnlineMsgServer
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             try
             {
-                MainLoop();
+                await MainLoop();
             }
             catch (Exception e)
             {
@@ -21,7 +21,7 @@ namespace OnlineMsgServer
             }
         }
 
-        static void MainLoop()
+        static async Task MainLoop()
         {
 
             //初始化RSA
@@ -33,11 +33,12 @@ namespace OnlineMsgServer
             wssv.AddWebSocketService<WsService>("/");
             wssv.Start();
             Console.WriteLine("已开启ws监听, 端口: " + ListenPort);
-            Console.WriteLine("输入exit退出程序");
 
             bool loopFlag = true;
             while (loopFlag)
             {
+#if DEBUG
+                Console.WriteLine("输入exit退出程序");
                 string input = Console.ReadLine() ?? "";
                 switch (input.Trim())
                 {
@@ -50,6 +51,8 @@ namespace OnlineMsgServer
                     default:
                         break;
                 }
+#endif
+                await Task.Delay(5000);// 每5秒检查一次
             }
             wssv.Stop();
         }
